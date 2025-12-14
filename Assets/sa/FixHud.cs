@@ -31,7 +31,7 @@ public class FixHUD : MonoBehaviour
         TextMeshProUGUI tmp = GetComponent<TextMeshProUGUI>();
         if (tmp != null)
         {
-            tmp.color = Color.red; // Make it bright red
+             // Make it bright red
             tmp.text = "HUD IS WORKING"; // Debug text
         }
         

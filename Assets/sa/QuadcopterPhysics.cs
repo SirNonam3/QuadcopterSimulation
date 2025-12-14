@@ -188,4 +188,23 @@ public class QuadcopterPhysics : MonoBehaviour
             logTimer = 0;
         }
     }
+    public void ResetPhysics()
+    {
+        // 1. Kill all motion
+        vel = Vector3.zero;
+        acc = Vector3.zero;
+        
+        // 2. Reset angles to flat level
+        phi = 0;
+        theta = 0;
+        psi = 0; // Or keep yaw if you prefer
+        
+        p = 0; q = 0; r = 0;
+
+        // 3. Clear History Log
+        historyLog.Clear();
+        
+        // 4. Reset Rotation visually immediately
+        transform.rotation = Quaternion.identity;
+    }
 }
