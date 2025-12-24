@@ -502,7 +502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraSwitcher
   targetCamera: {fileID: 330585546}
   fpvHud: {fileID: 1474403098}
-  tpvPosition: {x: 0, y: 4, z: -7}
+  tpvPosition: {x: 0, y: 4, z: -8}
   tpvRotation: {x: 20, y: 0, z: 0}
   fpvPosition: {x: 0, y: 0.2, z: 0.7}
   fpvRotation: {x: 0, y: 0, z: 0}
