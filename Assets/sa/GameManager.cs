@@ -133,4 +133,16 @@ public class GameManager : MonoBehaviour
         }
         return false;
     }
+
+    // --- EXIT GAME FUNCTION ---
+    public void QuitGame()
+    {
+        Debug.Log("Quitting Game...");
+        Application.Quit();
+
+        // This line makes the Quit button work even inside the Unity Editor (for testing)
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+    }
 }
